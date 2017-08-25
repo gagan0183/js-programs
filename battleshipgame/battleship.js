@@ -72,7 +72,11 @@ var controller =  {
             }
             else if (row < 0 || row >= model.boardSize || column < 0 || column > model.boardSize) {
                 alert("Oops, that isn't");
+            }
+            else {
+                return row + column;
             } 
         }
+        return null;
     }
 };  
