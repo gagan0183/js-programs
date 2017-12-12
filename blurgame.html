@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            blur game
+        </title>
+        <style>
+            body {
+                margin: 20px;
+            }
+            img {
+                margin: 20px;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                var img = document.getElementById("zero");
+                img.onclick = function() {
+                    var img = document.getElementById("zero");
+                    img.src = "img/zero.jpg";
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <img id="zero" src="img/zeroblur.jpg">
+        <img id="one" src="img/oneblur.jpg">
+        <img id="two" src="img/twoblur.jpg">
+        <img id="three" src="img/threeblur.jpg">
+        <img id="four" src="img/fourblur.jpg">
+        <img id="five" src="img/fiveblur.jpg">
+    </body>
+</html>
