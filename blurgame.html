@@ -14,10 +14,13 @@
         </style>
         <script>
             window.onload = function() {
-                var img = document.getElementById("zero");
-                img.onclick = function() {
-                    var img = document.getElementById("zero");
-                    img.src = "img/zero.jpg";
+                var img = document.getElementsByTagName("img");
+                for(var i = 0; i < img.length; i++) {
+                    img[i].onclick = show;                    
+                }
+                function show(e) {
+                    var img = e.target;
+                    img.src = "img/" + img.id + ".jpg";
                 };
             };
         </script>
