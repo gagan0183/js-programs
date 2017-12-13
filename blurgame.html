@@ -20,13 +20,13 @@
                 }
                 function show(e) {
                     var img = e.target;
-                    if(img.src.match(/blur/)) {
-                        img.src = "img/" + img.id + ".jpg";    
-                    }
-                    else {
-                        img.src = "img/" + img.id + "blur.jpg";
-                    }
+                    img.src = "img/" + img.id + ".jpg";
+
+                    setTimeout(reblur, 2000, img);
                 };
+                function reblur(img) {
+                    img.src = "img/" + img.id + "blur.jpg";
+                }
             };
         </script>
     </head>
