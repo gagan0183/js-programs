@@ -9,13 +9,13 @@ var products = [
 
 function compareSold(colaA, colaB) {
     if(colaA.sold > colaB.sold) {
-        return 1;
+        return -1;
     }
     else if(colaA.sold === colaB.sold) {
         return 0;
     }
     else {
-        return -1;
+        return 1;
     }
 }
 
