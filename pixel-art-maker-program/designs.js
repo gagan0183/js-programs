@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 function makeGrid() {
     event.preventDefault();
-    $('#pixelCanvas').html("");
+    $('#pixelCanvas').html(""); 
     var inputHeight = $('#inputHeight').val();
     var inputWeight = $('#inputWeight').val();
     var colorPicker = $('#colorPicker').val();
